@@ -5,21 +5,21 @@ class MainContent extends Component {
         return (
             <div className="main-content">
                 <div className="container">
-                    <h2>What is this page about?</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem impedit corporis hic aspernatur maxime suscipit excepturi, quod, illum, exercitationem enim distinctio voluptatem quas voluptate. Doloremque cupiditate quos dolore culpa qui?</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam repellendus repudiandae asperiores quasi ducimus, inventore dolore placeat illo neque animi.</p>
+                    <h2>About Me</h2>
+                    <p>I was born and raised in San Antonio, Texas and have lived and traveled all over the United States
+                    working various jobs. I'm a jack of all trades, yet didn't discover my true passion in life 
+                    until I started building websites. I spend all the free time I have learning and practicing web development.
+                    Becoming a freelance web developer is a dream I have made a reality. The main two reasons to work
+                    with me are split between my determination, to go above and beyond to reach goals, and my reliabilty to 
+                    deliver a quality product.
+                    </p>
+                    <hr/>
+                    <p>My second passion in life is music. I love to play guitar and just like web developement I like to try and 
+                        figure out how to play different songs. Music fuels an ongoing project I started when I first began programming
+                         called Simply Music. Simply music is just that, a simple music recording web app that's easy to use and kid friendly,
+                         so that anyone can use it to create a masterpiece.
+                    </p>
 
-                    <h2>Tell Me More</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae nihil mollitia enim ex reprehenderit doloribus tempore obcaecati voluptates quibusdam quidem provident ab eius ullam doloremque ipsum nam laborum praesentium, facere, hic rem sapiente! Repellendus, blanditiis. Modi commodi debitis earum.</p>
-
-                    <h2>Benefits</h2>
-                    <ul>
-                        <li>Lifetime Access</li>
-                        <li>30 Day Money Back</li>
-                        <li>Tailored Customer Support</li>
-                    </ul>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis rerum voluptatibus illo ad animi sint totam mollitia facilis itaque exercitationem tenetur ullam ex ut cum quisquam corrupti maxime ab asperiores, expedita, consequuntur architecto eius accusamus. Optio consequuntur error reiciendis sint, veniam voluptatum placeat, impedit ea nostrum nam qui inventore cumque aperiam aspernatur quasi! Autem inventore sint quae asperiores, modi expedita, quidem similique pariatur molestiae consectetur voluptates dolorem quibusdam quam suscipit!</p>
                 </div>
             </div>
         )
