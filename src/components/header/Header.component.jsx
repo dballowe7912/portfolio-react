@@ -3,11 +3,26 @@ import React, { Component } from 'react';
 import './Header.style.css';
 
 class Header extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            class: "show-nav"
+        }
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        this.props.toggleNavbar();
+    }
+
+
     render() {
         return (
             <div className="header">
                 <header>
-                    <button id="toggle" className="toggle">
+                    <button id="toggle" onClick={this.handleClick} className="toggle">
                         <i className="fa fa-bars fa-2x"></i>
                     </button>
                     <h1>Hi, my name Donald,</h1>

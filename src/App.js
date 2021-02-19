@@ -6,12 +6,32 @@ import Modal from './components/modal/Modal.component';
 import './App.css';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      showNav: false
+    }
+
+    this.toggleNavbar = this.toggleNavbar.bind(this);
+  }
+
+  toggleNavbar() {
+    this.setState({
+      showNav: !this.state.showNav
+    })
+  }
+  
+
   render() {
+    console.log()
     return (
       <div className="App">
-        <Navbar />
-        <Header/>
-        <MainContent/>
+
+        {this.state.showNav && <Navbar/>}
+        
+        <Header toggleNavbar={this.toggleNavbar}/>
+        {/* <MainContent/> */}
         {/* <Modal/> */}
       </div>
     );
