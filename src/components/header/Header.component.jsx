@@ -6,15 +6,11 @@ class Header extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            class: "show-nav"
-        }
-
         this.handleClick = this.handleClick.bind(this);
     }
 
     handleClick() {
-        this.props.toggleNavbar();
+        this.props.toggleNav();
     }
 
 

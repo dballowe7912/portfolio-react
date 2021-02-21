@@ -9,6 +9,7 @@ class Navbar extends Component {
         return (
             <div className="navbar">
                 <nav>
+                    <button onClick={this.props.toggleNav}>X</button>
                     <div className="logo">
                         <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="user"/>
                     </div>

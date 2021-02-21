@@ -13,14 +13,13 @@ class App extends React.Component {
       showNav: false
     }
 
-    this.toggleNavbar = this.toggleNavbar.bind(this);
+    this.toggleNav = this.toggleNav.bind(this)
   }
 
-  toggleNavbar() {
-    this.setState({
-      showNav: !this.state.showNav
-    })
+  toggleNav(){
+    this.setState({showNav: !this.state.showNav})
   }
+
   
 
   render() {
@@ -28,9 +27,9 @@ class App extends React.Component {
     return (
       <div className="App">
 
-        {this.state.showNav && <Navbar/>}
+        {this.state.showNav ? <Navbar toggleNav={this.toggleNav}/> : ''}
         
-        <Header toggleNavbar={this.toggleNavbar}/>
+        <Header toggleNav={this.toggleNav}/>
         {/* <MainContent/> */}
         {/* <Modal/> */}
       </div>

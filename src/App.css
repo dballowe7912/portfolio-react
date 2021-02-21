@@ -16,7 +16,7 @@ body {
     transition: transform 0.3 ease;
 }
 
-.show-nav {
+body.show-nav {
     /* Width of Nav */
     transform: translateX(200px);
 }
