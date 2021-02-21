@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 
 class Navbar extends Component {
     constructor(props){
@@ -9,15 +10,15 @@ class Navbar extends Component {
         return (
             <div className="navbar">
                 <nav>
-                    <button onClick={this.props.toggleNav}>X</button>
+                    <button className="close-btn" onClick={this.props.toggleNav}>X</button>
                     <div className="logo">
                         <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="user"/>
                     </div>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><NavLink exact activeClassName="active-link" to="/home">Home</NavLink></li>
+                        <li><NavLink exact activeClassName="active-link" to="/about">About</NavLink></li>
+                        <li><NavLink exact activeClassName="active-link" to="/portfolio">Portfolio</NavLink></li>
+                        <li><NavLink exact activeClassName="active-link" to="/contact">Contact</NavLink></li>
                     </ul>
                 </nav>
             </div> 
